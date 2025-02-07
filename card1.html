@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gacha Simulator</title>
+  <link rel="stylesheet" href="gachacss.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gacha Simulator</h1>
+    <p>Klik tombol di bawah untuk mencoba keberuntunganmu!</p>
+    <button id="rollButton">Dapatkan Hadiah</button>
+    <div class="result">
+      <h2 id="resultText"></h2>
+      <img id="itemImage" src="" alt="Hadiah" style="display: none;">
+    </div>
+    <div class="gacha-history">
+      <ul id="history-list"></ul>
+    </div>
+    <div class="gacha-prizes">
+    <h2>Daftar Hadiah</h2>
+    <ol id="prizes-list">
+      <li>Pedang Legendaris (5%)</li>
+      <li>Perisai Langka (15%)</li>
+      <li>Potion Penyembuhan (30%)</li>
+      <li>Koin Emas (50%)</li>
+    </ol>
+  </div>
+  <!-- Elemen audio untuk suara -->
+  <audio id="buttonSound" src="button-click.mp3"></audio>
+  <audio id="winSound" src="win-sound.mp3"></audio>
+  <script src="gachajava.js"></script>
+</body>
+</html>

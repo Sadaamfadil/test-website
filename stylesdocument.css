@@ -1,0 +1,562 @@
+/* Global Styles */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: url('image.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+h6 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Header */
+header {
+  backdrop-filter: blur(10px);
+  background: transparent;
+  border: 3px solid rgba(54, 54, 54, 0.158);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containers {
+  margin: 20px;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerAbout p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.containerAbout {
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links button {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.navLogin {
+  list-style: none;
+  display: flex;
+}
+
+.navLogin li {
+  margin: 0 0px;
+}
+
+.btn2 {
+  /*border: 1px solid #ffffff;*/
+  background: rgb(0, 183, 255);
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 0px 0px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background: #ffffff;
+  color: rgb(0, 183, 255);
+  transform: scaleY(20px) ;
+  transition: .2s ;
+}
+
+.navi:hover {
+  text-decoration: underline;
+}
+
+.navLogin a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  /*backdrop-filter: blur(10px);*/
+  background: rgb(0, 183, 255);
+  /*border: 2px solid rgba(54, 54, 54, 0.158);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;*/
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: rgb(0, 183, 255);
+}
+
+/* Hero Section */
+#home {
+  background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+  width: 100%;
+  height: 90%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.selected-languages {
+  cursor: pointer;
+}
+
+.selected-languages::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://wallpapercave.com/wp/wp2134643.jpg);
+}
+
+.youtube {  
+  /*background: transparent;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.youtube iframe {
+  box-sizing: border-box;
+  border: 2px #fff;
+  margin: 20px;
+  padding: 20px 0px 20px;
+}
+
+.hero {
+  width: 35%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  /*backdrop-filter: blur(10px);
+  background: transparent;
+  border: 2px solid rgba(54, 54, 54, 0.158);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;*/
+}
+
+.hero h1 {
+  font-size: 48px;
+  padding: 0px;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 18px;
+  background: transparent;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  background: rgb(20, 45, 129);
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  padding: 20px 0;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card1, .card2, .card3{
+  background: #fff;
+  padding: 20px;
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card1:hover, .card2:hover, .card3:hover{
+  background: rgb(0, 183, 255);
+  
+}
+
+.card1 a, .card2 a, .card3 a {
+  color: #000000;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  background: #0d8ffa;
+  color: #fff;
+  text-align: center;
+}
+
+.contact form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.contact button {
+  background: #fff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}
+
+.login-container {
+  backdrop-filter: blur(6px);
+  background: rgb(0, 183, 255);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(53, 43, 56, 0.5);
+  color: #000000;
+  border-radius: 20px;
+  width: 350px;
+  padding: 40px 30px;
+  display: none;
+  position: fixed;
+  top: 27%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+
+}
+
+.login-container span {
+  color: #ffffff;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: grey;
+}
+
+.login-container h2 {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  
+}
+
+.form-group input {
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 2px solid rgba(248, 248, 248, 0.301);
+  border-radius: 40px;
+  padding: 20px 20px 20px 20px;
+  font-size: 16px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  color:#ffffff
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  color: rgb(3, 3, 3);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: rgb(0, 183, 255);
+  color: #fff;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
+
+.register-link p {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-group input::placeholder {
+  color: #ffffff;
+}
+
+.form-group i {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+/* From Uiverse.io by Praashoo7 */ 
+.main {  
+  margin: 30px 0 0;
+  flex-direction: column;
+  gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  text-align: center;  
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card11 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card22 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card33 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+}
+
+.card44 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.gmail {
+  margin-top: 1.5em;
+  margin-left: -1.2em;
+  fill: #f14336;
+}
+
+.card11:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card11:hover .instagram {
+  fill: white;
+}
+
+.card22:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card22:hover .facebook {
+  fill: white;
+}
+
+.card33:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card33:hover .github {
+  fill: white;
+}
+
+.card44:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #f14336;
+}
+
+.card44:hover .gmail {
+  fill: white;
+}
