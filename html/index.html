@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="icon" type="image/jpg" href="https://static.vecteezy.com/system/resources/previews/000/414/750/original/silhouette-scene-of-mountains-at-sunset-vector.jpg">
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm" action="submit-login" method="POST">
+      <h2>LOGIN</h2>
+      <div class="form-group">
+        <input type="text" placeholder="Username" id="username" name="username" required>        
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" id="password" name="password" required>       
+      </div>
+      <button type="submit">Login</button>
+      <p id="error-message" class="error-message"></p>
+      <div class="register-link">
+        <p>Don't have an account?
+          <a href="register.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
